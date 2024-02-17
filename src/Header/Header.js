@@ -1,5 +1,6 @@
 import { NavLink, useNavigate } from "react-router-dom";
 import "./Header.css";
+import { Center} from '@chakra-ui/react'
 
 const Header = () => {
   // Navegación
@@ -7,16 +8,17 @@ const Header = () => {
 
   return (
 
-    <nav className='navigation'>
-      <button className="navigation__link" onClick={() => navigate(-1)}>Atrás</button>
+      <Center bg='#282c34' h='100px' color='white'>
+        <nav className='navigation'>
+          <button className="navigation__link" onClick={() => navigate(-1)}>Atrás</button>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/News">Noticias</NavLink>
           <NavLink to="/News/Sports">Deportes</NavLink>
           <NavLink to="/News/Economy">Economia</NavLink>
           <NavLink to="/News/Tecnology">Tecnología</NavLink>
-      <button className="navigation__link" onClick={() => navigate(1)}>Adelante</button>
-    </nav>
-
+          <button className="navigation__link" onClick={() => navigate(1)}>Adelante</button>
+        </nav>
+      </Center>
 
   );
 }

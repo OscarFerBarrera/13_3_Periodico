@@ -15,7 +15,6 @@ const News = () => {
           <Text marginTop='20px' fontSize='md'>Encuentre las últimas noticias sobre tus deportes favoritos, desde fútbol hasta tenis, baloncesto, golf y mucho mas.</Text>
         </Box>
         <Box height='200px'>
-          {/* <Button colorScheme='gray' onClick={() => setChagePages('Economy')}>Economía</Button> */}
           <Link to="/News/Economy">Economía</Link>
           <Text marginTop='20px' fontSize='md'>Mantente al día con las últimas tendencias tecnológicas, desde dispositivos móviles hasta inteligencia artificial, robótica y mucho más.</Text>
         </Box>

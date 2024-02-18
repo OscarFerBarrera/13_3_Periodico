@@ -12,7 +12,7 @@ const Header = () => {
         <nav className='navigation'>
           <button className="navigation__link" onClick={() => navigate(-1)}>Atrás</button>
           <NavLink to="/">Home</NavLink>
-          <NavLink to="/News">Noticias</NavLink>
+          <NavLink to="/News" end>Noticias</NavLink>
           <NavLink to="/News/Sports">Deportes</NavLink>
           <NavLink to="/News/Economy">Economia</NavLink>
           <NavLink to="/News/Tecnology">Tecnología</NavLink>
